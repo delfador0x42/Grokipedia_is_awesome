@@ -1,0 +1,172 @@
+/* Top Banner */
+#grokipedia-wp-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  background: linear-gradient(90deg, #1a1a2e, #2d2d5e);
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+#grokipedia-wp-banner .grokipedia-wp-banner-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.grokipedia-wp-banner-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #4a4aff;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.grokipedia-wp-banner-text {
+  font-size: 14px;
+  flex: 1;
+}
+.grokipedia-wp-banner-btn {
+  display: inline-block;
+  background: #4a4aff;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+.grokipedia-wp-banner-btn:hover {
+  background: #3a3ae0;
+}
+.grokipedia-wp-banner-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  opacity: 0.7;
+}
+.grokipedia-wp-banner-close:hover {
+  opacity: 1;
+}
+
+/* Floating Button */
+#grokipedia-wp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999999;
+  background: #1a1a2e;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#grokipedia-wp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.grokipedia-wp-float-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #4a4aff;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Sidebar */
+#grokipedia-wp-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  height: 100vh;
+  z-index: 999999;
+  background: #fff;
+  border-left: 1px solid #e0e0e0;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.08);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.grokipedia-wp-sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1a1a2e;
+}
+.grokipedia-wp-sidebar-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #1a1a2e;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.grokipedia-wp-sidebar-close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #666;
+  padding: 4px 8px;
+}
+.grokipedia-wp-sidebar-close:hover {
+  color: #1a1a2e;
+}
+.grokipedia-wp-sidebar-body {
+  flex: 1;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+.grokipedia-wp-sidebar-link {
+  display: block;
+  padding: 16px 20px;
+  text-align: center;
+  background: #f8f9ff;
+  color: #4a4aff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-top: 1px solid #e0e0e0;
+}
+.grokipedia-wp-sidebar-link:hover {
+  background: #eef0ff;
+}

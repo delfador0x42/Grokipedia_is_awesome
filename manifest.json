@@ -1,0 +1,70 @@
+{
+  "manifest_version": 3,
+  "name": "Wikipedia to Grokipedia",
+  "version": "1.0.0",
+  "description": "Auto-redirect Wikipedia links to Grokipedia and surface Grokipedia summaries in Google search results.",
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Wikipedia to Grokipedia"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "*://en.wikipedia.org/*",
+    "*://www.google.com/*",
+    "*://www.google.co.uk/*",
+    "*://grokipedia.com/*",
+    "*://grokipedia-api.com/*"
+  ],
+
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "wikipedia_redirect_ruleset",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.google.com/search*",
+        "*://www.google.co.uk/search*"
+      ],
+      "js": ["content-google.js"],
+      "css": ["content-google.css"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "*://en.wikipedia.org/wiki/*"
+      ],
+      "js": ["content-wikipedia.js"],
+      "css": ["content-wikipedia.css"],
+      "run_at": "document_end"
+    }
+  ]
+}

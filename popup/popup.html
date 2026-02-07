@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wikipedia to Grokipedia</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <div class="popup-logo">G</div>
+      <div>
+        <h1 class="popup-title">Grokipedia</h1>
+        <p class="popup-subtitle">Wikipedia, enhanced</p>
+      </div>
+    </div>
+
+    <div class="popup-section">
+      <div class="setting-row">
+        <div class="setting-info">
+          <span class="setting-label">Auto-redirect</span>
+          <span class="setting-desc">Redirect Wikipedia to Grokipedia</span>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-redirect">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <span class="setting-label">Search Enhancement</span>
+          <span class="setting-desc">Show Grokipedia in Google results</span>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-banner">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <span class="setting-label">Open in new tab</span>
+          <span class="setting-desc">Links open in a new tab</span>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-newtab">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="popup-section">
+      <h2 class="popup-section-title">Display Mode</h2>
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" name="displayMode" value="banner">
+          <span class="radio-custom"></span>
+          <div>
+            <span class="radio-label">Banner</span>
+            <span class="radio-desc">Full-width card above results</span>
+          </div>
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="displayMode" value="floating">
+          <span class="radio-custom"></span>
+          <div>
+            <span class="radio-label">Floating Button</span>
+            <span class="radio-desc">Compact button near results</span>
+          </div>
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="displayMode" value="sidebar">
+          <span class="radio-custom"></span>
+          <div>
+            <span class="radio-label">Sidebar</span>
+            <span class="radio-desc">Panel on the right side</span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="popup-footer">
+      <a href="https://grokipedia.com" target="_blank">Visit Grokipedia</a>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
