@@ -1,6 +1,6 @@
 # Wikipedia to Grokipedia
 
-Chrome extension (MV3) that auto-redirects Wikipedia to Grokipedia and shows Grokipedia summaries in Google search results.
+Chrome extension (MV3) that auto-redirects Wikipedia to Grokipedia and shows Grokipedia summaries in Google search results. It'll also show Grokipedia summary results above Wikipedia.
 
 ## Install
 
@@ -9,4 +9,4 @@ Chrome extension (MV3) that auto-redirects Wikipedia to Grokipedia and shows Gro
 3. Click "Load unpacked" and select this folder
 
 
-<img width="820" height="844" alt="image" src="https://github.com/user-attachments/assets/a87cbcd4-dc0e-4f03-8b70-ff7dd9e4d0ce" />
+<img width="1021" height="465" alt="image" src="https://github.com/user-attachments/assets/1522d50a-f655-4ddd-9fd1-b29eb1199856" />
